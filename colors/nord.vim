@@ -15,7 +15,21 @@ endif
 let g:colors_name = "nord"
 let s:nord_vim_version="0.9.0"
 
-if &background == "dark"
+if &background == "light"
+	let s:nord1_term = "4"
+	let s:nord3_term = "8"
+	let s:nord5_term = "7"
+	let s:nord6_term = "15"
+	let s:nord7_term = "14"
+	let s:nord8_term = "1"
+	let s:nord9_term = "3"
+	let s:nord10_term = "12"
+	let s:nord11_term = "4"
+	let s:nord12_term = "11"
+	let s:nord13_term = "6"
+	let s:nord14_term = "5"
+	let s:nord15_term = "2"
+else
 	let s:nord0_gui = "#2E3440"
 	let s:nord1_gui = "#3B4252"
 	let s:nord2_gui = "#434C5E"
@@ -46,22 +60,7 @@ if &background == "dark"
 	let s:nord13_term = "3"
 	let s:nord14_term = "2"
 	let s:nord15_term = "5"
-fi
-if &background == "light"
-	let s:nord1_term = "4"
-	let s:nord3_term = "8"
-	let s:nord5_term = "7"
-	let s:nord6_term = "15"
-	let s:nord7_term = "14"
-	let s:nord8_term = "1"
-	let s:nord9_term = "3"
-	let s:nord10_term = "12"
-	let s:nord11_term = "4"
-	let s:nord12_term = "11"
-	let s:nord13_term = "6"
-	let s:nord14_term = "5"
-	let s:nord15_term = "2"
-fi
+endif
 
 let s:nord3_gui_brightened = [
   \ s:nord3_gui,
